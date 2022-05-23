@@ -86,8 +86,10 @@ body {
 }
 .banner {
   background-image: url(./Images/banner.jpg);
-  padding: 100px 100px 40px 100px;
-  background-position: right;
+  /* padding: 100px 100px 40px 100px; */
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-size: cover;
 }
 .relax {
   margin: 0;
