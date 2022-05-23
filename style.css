@@ -378,11 +378,16 @@ body {
   font-size: 14px;
   text-align: center;
 }
+.img-mrgn{
+margin-top: 30px;
+margin-left: 50px;
+}
 .logos {
   margin: 15px 0 0 15px;
 }
 .img-m {
   text-align: center;
+  margin: 0px 50px;
 }
 .img-w {
   width: 200px;
