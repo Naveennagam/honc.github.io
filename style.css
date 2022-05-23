@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/*fonts*/
+@font-face {
+  font-family: honc-Bold;
+  src: url("./font/honc-Bold.ttf");
+}
+@font-face {
+  font-family: honc-ExtraBold;
+  src: url("./font/honc-ExtraBold.ttf");
+}
+@font-face {
+  font-family: honc-Heavy;
+  src: url("./font/honc-Heavy.ttf");
+}
+@font-face {
+  font-family: honc-Light;
+  src: url("./font/honc-Light.ttf");
+}
+@font-face {
+  font-family: honc-Medium;
+  src: url("./font/honc-Medium.ttf");
+}
+@font-face {
+  font-family: honc-Regular;
+  src: url("./font/honc-Regular.ttf");
+}
+@font-face {
+  font-family: honc-SemiBold;
+  src: url("./font/honc-SemiBold.ttf");
+}
+/*fonts*/
+
+/* Defults */
+.m0 {
+  margin: 0;
+}
+.p0 {
+  padding: 0;
+}
+.f30 {
+  font-size: 25px;
+}
+.areal {
+  /* font-family: ; */
+  margin: 0;
+  padding: 0;
+}
+.px-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Defults */
+.nav {
+  right: 0;
+  background-color: #000000;
+  height: 80px;
+  position: fixed;
+  left: 0px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+.logo {
+  width: 100px;
+}
+.link {
+  margin-left: 50px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.link:hover {
+  border-bottom: 3px solid #fff;
+  transition: 300ms;
+}
+.active {
+  border-bottom: 3px solid #fff;
+}
+.banner {
+  background-image: url(./Images/banner.jpg);
+  padding: 100px 100px 40px 100px;
+  background-position: right;
+}
+.relax {
+  margin: 0;
+  text-align: center;
+  font-size: 65px;
+  color: #ffec00;
+}
+.relax2 {
+  text-align: center;
+  margin: 0;
+  font-size: 55px;
+  color: #fff;
+}
+.border-bottom {
+  padding-bottom: 20px;
+  border-bottom: 4px solid #ffffff;
+}
+.relaxMargin {
+  padding-top: 150px;
+}
+.flex {
+  display: flex;
+}
+.itemCenter {
+  margin-top: 50px;
+  justify-content: center;
+}
+.itemCenter div {
+  margin: 15px;
+}
+.itemCenter div img {
+  width: 170px;
+}
+.CarWash {
+  text-align: center;
+  color: #000;
+  padding: 90px 0 0 0;
+  margin: 0;
+}
+.m30 {
+  margin-left: 40px;
+}
+.madeWithLOve {
+  text-align: center;
+}
+.color1 {
+  background-color: #000;
+  border-radius: 23px;
+  padding: 5px 70px;
+}
+.orange {
+  color: #ffb300;
+}
+.white {
+  color: #fff;
+}
+.green {
+  color: #00cd0e;
+}
+.love {
+  font-size: 12px;
+  color: #ff0000;
+}
+.KeepingTheCars {
+  background-color: #000;
+  background-size: auto auto;
+  height: auto;
+  width: auto;
+}
+.Keeping {
+  text-align: center;
+  margin: 0;
+  font-size: 45px;
+  color: #f05a5a;
+  padding-top: 70px;
+}
+.textColor {
+  color: #f05a5a;
+  font-size: 30px;
+}
+.HyderabadColor {
+  color: #fff;
+  font-size: 18px;
+}
+.flex2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0 40px 0;
+}
+.hyderabadCenter {
+  align-items: center;
+  text-align: center;
+}
+.img-size {
+  height: 150px;
+}
+.car {
+  text-align: center;
+  position: relative;
+}
+.position {
+  position: relative;
+  width: 350px;
+}
+.yellowBorder {
+  position: absolute;
+  padding-bottom: 15px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ffd500;
+}
+.dash {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin-top: -25px;
+  padding-bottom: 30px;
+}
+.dash:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #fff 25%,
+    #00000000 25%,
+    #00000000 50%,
+    #fff 50%,
+    #fff 75%,
+    #00000000 75%,
+    #00000000 100%
+  );
+  background-size: 120px;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -120px;
+  }
+}
+.yellowBorder2 {
+  bottom: 30px;
+  margin-top: 5px;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ffd500;
+}
+.coming {
+  background-color: #000000;
+  position: absolute;
+  height: 35px;
+  z-index: 1;
+  margin-left: 150px;
+  margin-top: -20px;
+}
+.soon {
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+  margin: 0;
+}
+.pattren {
+  height: auto;
+  width: auto;
+  background-color: #f16868;
+  padding: 100px 180px;
+}
+.box {
+  height: auto;
+  border: 35px solid #000;
+  /* 15px solid #ffea00; */
+  position: relative;
+  border-radius: 80px;
+}
+.boxLine {
+  border: 5px dashed #ffffff;
+  height: auto;
+  border-radius: 65px;
+  padding: 40px;
+  margin: -20px;
+}
+.superstar {
+  font-size: 40px;
+  text-align: center;
+}
+.flex3 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.Check {
+  text-align: center;
+  line-height: 25px;
+  font-size: 30px;
+}
+.Select {
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+}
+.pattren2 {
+  height: auto;
+  width: auto;
+  padding: 100px;
+  background-color: #000000;
+}
+.pattren3 {
+  height: auto;
+  width: auto;
+  background-color: #f16868;
+  padding: 200px 150px;
+}
+.flexicin {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+.img-h {
+  height: 200px;
+}
+.stalkers {
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  color: #000000;
+}
+.stalkers2 {
+  text-align: center;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #000000;
+}
+.stalkers3 {
+  text-align: center;
+  margin: 0;
+  font-size: 60px;
+  color: #000000;
+}
+.stalkers3clr {
+  color: #fff;
+}
+.wherever {
+  padding: 5px 30px;
+  background-color: #000;
+  border-radius: 40px;
+}
+.honc {
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+}
+.pattren4 {
+  height: auto;
+  width: auto;
+  background-color: #000000;
+  padding: 100px 100px 5px 100px;
+}
+.footerflex {
+  display: flex;
+  margin-top: 30px;
+}
+.name {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+.footerparagraph {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.logos {
+  margin: 15px 0 0 15px;
+}
+.img-m {
+  text-align: center;
+}
+.img-w {
+  width: 200px;
+}
+.footerflex2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.imgmargin {
+  margin: 0 5px;
+}
+.honcing {
+  color: #f16868;
+  font-size: 25px;
+  text-align: center;
+}
+.copy {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* meet the honcers */
+
+.banner2 {
+  background-color: #f05a5a;
+}
+.co-founder {
+  background-color: #000;
+  padding-bottom: 100px;
+  height: auto;
+}
+.co-founder-flex {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+.linldin-p {
+  padding-top: 10px;
+}
+.meet {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 65px;
+  color: #ffec00;
+}
