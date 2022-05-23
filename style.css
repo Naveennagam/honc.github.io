@@ -71,9 +71,6 @@ body {
   text-decoration: none;
   display: flex;
 }
-.logo {
-  width: 100px;
-}
 .link {
   margin-left: 50px;
   color: #fff;
@@ -251,7 +248,7 @@ body {
   position: absolute;
   height: 35px;
   z-index: 1;
-  margin-left: 150px;
+  margin-left: 300px;
   margin-top: -20px;
 }
 .soon {
@@ -261,11 +258,15 @@ body {
   font-size: 20px;
   margin: 0;
 }
+.ptrn{
+  background-color: #f05a5a;
+}
 .pattren {
   height: auto;
   width: auto;
-  background-color: #f16868;
-  padding: 100px 180px;
+  background-color: ##f05a5a;
+  padding: 100px 0px ;
+  margin:0px 180px;
 }
 .box {
   height: auto;
@@ -311,7 +312,8 @@ body {
   height: auto;
   width: auto;
   background-color: #f16868;
-  padding: 200px 150px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .flexicin {
   display: flex;
@@ -358,7 +360,6 @@ body {
   height: auto;
   width: auto;
   background-color: #000000;
-  padding: 100px 100px 5px 100px;
 }
 .footerflex {
   display: flex;
