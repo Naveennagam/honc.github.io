@@ -262,11 +262,12 @@ body {
   background-color: #f05a5a;
 }
 .pattren {
-  height: auto;
-  width: auto;
-  background-color: ##f05a5a;
-  padding: 100px 0px ;
-  margin:0px 180px;
+  background-color: #f05a5a;
+  margin-left: 100px;
+  margin-right: 100px;
+  /* margin-top: 40px;
+  margin-bottom: 40px; */
+  padding: 160px 0px;
 }
 .box {
   height: auto;
@@ -279,17 +280,17 @@ body {
   border: 5px dashed #ffffff;
   height: auto;
   border-radius: 65px;
-  padding: 40px;
   margin: -20px;
 }
 .superstar {
   font-size: 40px;
   text-align: center;
+  margin-top: 100px;
 }
 .flex3 {
   display: flex;
   justify-content: space-around;
-  margin-top: 60px;
+  margin: 60px;
 }
 .Check {
   text-align: center;
