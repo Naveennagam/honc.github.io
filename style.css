@@ -54,6 +54,31 @@ body {
 }
 
 /* Defults */
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .nav {
+    width: 1200px;
+  }
+  .banner {
+    width: 1200px;
+  }
+  .KeepingTheCars {
+    width: 1200px;
+  }
+  .ptrn {
+    width: 1200px;
+  }
+  .pattren2 {
+    width: 1200px;
+  }
+  .pattren3 {
+    width: 1200px;
+  }
+  .pattren4 {
+    width: 1200px;
+  }
+}
+
 .nav {
   right: 0;
   background-color: #000000;
@@ -86,7 +111,6 @@ body {
 }
 .banner {
   background-image: url(./Images/banner.jpg);
-  /* padding: 100px 100px 40px 100px; */
   padding-top: 100px;
   padding-bottom: 40px;
   background-size: cover;
@@ -156,18 +180,16 @@ body {
 .KeepingTheCars {
   background-color: #000;
   background-size: auto auto;
-  height: auto;
-  width: auto;
 }
 .Keeping {
   text-align: center;
   margin: 0;
   font-size: 45px;
-  color: #f16868;
+  color: #f26868;
   padding-top: 70px;
 }
 .textColor {
-  color: #f16868;
+  color: #f26868;
   font-size: 30px;
 }
 .HyderabadColor {
@@ -306,14 +328,10 @@ body {
   font-size: 20px;
 }
 .pattren2 {
-  height: auto;
-  width: auto;
-  padding: 100px;
+  /* padding: 100px; */
   background-color: #000000;
 }
 .pattren3 {
-  height: auto;
-  width: auto;
   background-color: #f16868;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -321,10 +339,12 @@ body {
 .flexicin {
   display: flex;
   justify-content: space-around;
-  margin: 100px 0;
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
 .img-h {
   height: 200px;
+  padding: 0px 15px;
 }
 .stalkers {
   text-align: center;
@@ -360,8 +380,8 @@ body {
   font-size: 25px;
 }
 .pattren4 {
-  height: auto;
-  width: auto;
+  /* height: auto;
+  width: auto; */
   background-color: #000000;
 }
 .footerflex {
@@ -385,18 +405,24 @@ body {
 .logos {
   margin: 15px 0 0 15px;
 }
+.footerflex > div {
+  padding: 50px;
+}
 .img-m {
   text-align: center;
-  margin: 0px 35px;
+  /* margin: 0px 35px; */
 }
-.m-left {
+/* .m-left {
   margin-left: 100px;
 }
 .m-right {
   margin-right: 100px;
-}
+} */
 .img-w {
-  width: 200px;
+  width: 60%;
+}
+.image-w {
+  width: 100%;
 }
 .footerflex2 {
   display: flex;
@@ -415,6 +441,8 @@ body {
   color: #fff;
   text-align: center;
   font-size: 14px;
+  margin: 0px;
+  padding-bottom: 10px;
 }
 
 /* meet the honcers */
