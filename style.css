@@ -55,15 +55,28 @@ body {
 
 /* Defults */
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-  .nav {
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+
+  .banner {
     width: 1200px;
   }
-  .banner {
+  .banner2 {
+    width: 1200px;
+  }
+  .co-founder{
     width: 1200px;
   }
   .KeepingTheCars {
     width: 1200px;
+  }
+  .flex2{
+    display: block;
+  }
+  .flex3{
+    display: block;
+  }
+  .coming{
+    margin-left: 160px;
   }
   .ptrn {
     width: 1200px;
