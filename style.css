@@ -56,26 +56,25 @@ body {
 /* Defults */
 
 @media only screen and (min-width: 360px) and (max-width: 640px) {
-
   .banner {
     width: 1200px;
   }
   .banner2 {
     width: 1200px;
   }
-  .co-founder{
+  .co-founder {
     width: 1200px;
   }
   .KeepingTheCars {
     width: 1200px;
   }
-  .flex2{
+  .flex2 {
     display: block;
   }
-  .flex3{
+  .flex3 {
     display: block;
   }
-  .coming{
+  .coming {
     margin-left: 160px;
   }
   .ptrn {
@@ -91,7 +90,6 @@ body {
     width: 1200px;
   }
 }
-
 .nav {
   right: 0;
   background-color: #000000;
@@ -134,6 +132,18 @@ body {
   font-size: 65px;
   color: #ffec00;
 }
+.changetext {
+  animation: fade-inout 1.5s infinite alternate;
+}
+@keyframes fade-inout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .relax2 {
   text-align: center;
   margin: 0;
