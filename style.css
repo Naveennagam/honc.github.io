@@ -55,50 +55,6 @@ body {
 
 /* Defults */
 
-@media only screen and (min-width: 360px) and (max-width: 640px) {
-  .banner {
-    width: 600px;
-    height: 1200px;
-  }
-  .banner2 {
-    width: 1200px;
-  }
-  .itemCenter div img {
-    width: 250px;
-  }
-  .co-founder {
-    width: 1200px;
-  }
-  .KeepingTheCars {
-    width: 600px;
-    height: 1200px;
-  }
-  .flex2 {
-    display: block;
-  }
-  .flex3 {
-    display: block;
-  }
-  .coming {
-    margin-left: 160px;
-  }
-  .ptrn {
-    width: 600px;
-    height: 1200px;
-  }
-  .pattren2 {
-    width: 600px;
-    height: 1200px;
-  }
-  .pattren3 {
-    width: 600px;
-    height: 1200px;
-  }
-  .pattren4 {
-    width: 600px;
-    height: 1200px;
-  }
-}
 .nav {
   right: 0;
   background-color: #000000;
@@ -132,7 +88,7 @@ body {
 .banner {
   background-image: url(./Images/banner.jpg);
   padding-top: 100px;
-    padding-bottom: 100px;
+  padding-bottom: 100px;
   background-size: cover;
 }
 .relax {
@@ -246,7 +202,7 @@ body {
 }
 .position {
   position: relative;
-  width: 350px;
+  width: 300px;
 }
 .yellowBorder {
   position: absolute;
@@ -479,50 +435,48 @@ body {
 
 /* be a honcer */
 
-.team-img{
-background-image: url(./Images/banner.jpg);
+.team-img {
+  background-image: url(./Images/banner.jpg);
 }
-.application{
+.application {
   background-color: #707070;
   padding: 50px;
 }
-.apply{
+.apply {
   background-color: #2c92b4;
   margin: 0px;
   text-align: center;
 }
-.node-js-justfy{
+.node-js-justfy {
   display: flex;
   justify-content: space-around;
 }
-.node-js-clr{
+.node-js-clr {
   background-color: #fff;
   border-radius: 10px;
-  width: 600px;
+  width: 620px;
   padding: 30px;
 }
-.Node-js{
-  color: #F16868;
+.Node-js {
+  color: #f16868;
   font-size: 30px;
 }
-.f-20{
+.f-20 {
   font-size: 20px;
 }
-.m-t-30{
+.m-t-30 {
   margin-top: 30px;
 }
-.f-30-l{
+.f-30-l {
   font-size: 30px;
   margin-left: 20px;
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
-.clock-flex{
+.clock-flex {
   display: flex;
   justify-content: space-between;
 }
-.m-t-55{
-  margin-top: 55px;
-}
+
 /* meet the honcers */
 
 .banner2 {
@@ -570,14 +524,119 @@ background-image: url(./Images/banner.jpg);
   padding-bottom: 10px;
   border-bottom: 4px solid #000000;
 }
-.m15{
-  margin: 15px 40PX;
+.m15 {
+  margin: 15px 40px;
 }
-.phone-flex{
+.phone-flex {
   display: flex;
   margin-top: 30px;
-justify-content: center;}
-.cell-font{
+  justify-content: center;
+}
+.cell-font {
   font-size: 28px;
+}
+/* Media */
 
+@media only screen and (max-width: 1080px) {
+}
+@media only screen and (max-width: 960px) {
+}
+@media only screen and (max-width: 720px) {
+}
+@media only screen and (max-width: 560px) {
+}
+@media only screen and (max-width: 420px) {
+}
+
+@media only screen and (max-width: 320px) {
+  .relaxMargin {
+    padding: 20px;
+  }
+  .relax,
+  .relax2 {
+    font-size: 25px;
+  }
+  .border-bottom {
+    padding-bottom: 10px;
+  }
+  .navList {
+    display: none;
+  }
+  .itemCenter {
+    text-align: center;
+  }
+  .CarWash {
+    padding: 30px 0 0 0;
+  }
+  .flex2,
+  .flexicin,
+  .flex3,
+  .footerflex,
+  .flex,
+  .footerflex2 {
+    display: block;
+  }
+  .flexicin {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .color1 {
+    padding: 5px 50px;
+  }
+  .banner {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .coming {
+    margin-left: 160px;
+  }
+  .superstar,
+  .Check {
+    font-size: 20px;
+  }
+  .Select {
+    font-size: 16px;
+  }
+  .pattren {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .boxLine {
+    padding: 20px;
+  }
+  .flex3 {
+    margin: 0;
+  }
+  .Keeping,
+  .flex2 {
+    padding: 0 10px;
+  }
+  .superstar {
+    margin-top: 20px;
+  }
+  .coming {
+    margin-left: 0px;
+    align-items: center;
+  }
+  .position {
+    width: 200px;
+  }
+  .soon {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+  }
+  .dash:before {
+    height: 2px;
+    background-size: 60px;
+    animation: animate 2s linear infinite;
+  }
+  .honc {
+    font-size: 18px;
+  }
+  .logos {
+    margin: 0;
+    text-align: center;
+  }
 }
