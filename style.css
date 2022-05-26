@@ -541,14 +541,7 @@ body {
 }
 @media only screen and (max-width: 960px) {
 }
-@media only screen and (max-width: 720px) {
-}
-@media only screen and (max-width: 560px) {
-}
-@media only screen and (max-width: 420px) {
-}
-
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 520px) {
   .relaxMargin {
     padding: 20px;
   }
@@ -599,11 +592,25 @@ body {
     font-size: 16px;
   }
   .pattren {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 0px;
+  }
+  .pattren2 {
+    padding-top: 50px;
+  }
+  .box {
+    border: 25px solid #000;
+  }
+  .boxLine {
+    border: 3px dashed #ffffff;
+    margin: -13px;
   }
   .boxLine {
     padding: 20px;
+  }
+  .flexicin {
+    margin-top: 60px;
   }
   .flex3 {
     margin: 0;
@@ -612,16 +619,19 @@ body {
   .flex2 {
     padding: 0 10px;
   }
+  .flex2 {
+    margin-top: 50px;
+  }
+  .Keeping {
+    font-size: 25px;
+    padding-top: 30px;
+  }
   .superstar {
     margin-top: 20px;
   }
   .coming {
     margin-left: 0px;
     align-items: center;
-    
-  }
-  .position {
-    width: 200px;
   }
   .soon {
     color: #fff;
