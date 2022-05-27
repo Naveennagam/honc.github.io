@@ -32,7 +32,33 @@ body {
   src: url("./font/honc-SemiBold.ttf");
 }
 /*fonts*/
+.f-h{
+  font-family: honc-Bold;
+}
+/* Bootstrap Override */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.bg-dark {
+  background-color: #000000!important;
+}
+.nav-item > a{
+  font-size: 20px;
+}
+.nav-link{
+  padding: 0;
+}
 
+.nav-item{
+  margin: 0 5px;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #fff;
+  transition: 300ms;
+}
+button:focus {
+  outline: none;
+}
 /* Defults */
 .m0 {
   margin: 0;
@@ -65,22 +91,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-link {
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-}
-.link {
-  margin-left: 50px;
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-}
-.link:hover {
-  border-bottom: 3px solid #fff;
-  transition: 300ms;
 }
 .active {
   border-bottom: 3px solid #fff;
@@ -565,6 +575,11 @@ body {
   }
   .navList {
     display: none;
+  }
+  .px-100{
+    padding-left: 20px;
+    padding-right: 10px;
+
   }
   .itemCenter {
     text-align: center;
