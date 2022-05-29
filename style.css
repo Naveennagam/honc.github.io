@@ -32,8 +32,41 @@ body {
   src: url("./font/honc-SemiBold.ttf");
 }
 /*fonts*/
-.f-h {
+/* h1,h2,h3,h4,h5,h6 {
   font-family: honc-Bold;
+} */
+.h1 {
+  font-family: honc-SemiBold;
+}
+.h2 {
+  font-family: honc-Regular;
+}
+.f-h {
+  font-family: honc;
+}
+h1 {
+  font-size: 4.063rem; /*/65/*/
+}
+h2 {
+  font-size: 3.75rem; /*/60/*/
+}
+h3 {
+  font-size: 3.438rem; /*/55/*/
+}
+h4 {
+  font-size: 2.813rem; /*/45/*/
+}
+h5 {
+  font-size: 1.875rem; /*/30/*/
+}
+h6 {
+  font-size: 1.875rem; /*/30/*/
+}
+p {
+  font-size: 1.125rem; /*/60/*/
+}
+.f-h {
+  font-family: honc;
 }
 /* Bootstrap Override */
 .navbar-dark .navbar-nav .nav-link {
@@ -44,6 +77,8 @@ body {
 }
 .nav-item > a {
   font-size: 20px;
+  font-family: honc-Medium;
+  src: url("./font/honc-Medium.ttf");
 }
 .nav-link {
   padding: 0;
@@ -80,6 +115,10 @@ button:focus {
 }
 
 /* Defults */
+nav {
+  background: #000;
+  transition: background 1s;
+}
 
 .active {
   border-bottom: 3px solid #fff;
@@ -117,6 +156,8 @@ button:focus {
 .border-btm {
   padding-bottom: 20px;
   border-bottom: 5px solid #ffffff;
+  /* font-family: semi-bold; */
+  /* src: url(./font/honc-SemiBold.ttf ); */
 }
 .relaxMargin {
   padding-top: 150px;
@@ -166,6 +207,8 @@ button:focus {
 }
 .KeepingTheCars {
   background-color: #000;
+  background-image: url(./Images/wave\ png.png);
+  width: auto;
   background-size: auto auto;
 }
 .Keeping {
@@ -173,11 +216,12 @@ button:focus {
   margin: 0;
   font-size: 45px;
   color: #f26868;
-  padding-top: 70px;
+  padding-top: 120px;
 }
 .textColor {
   color: #f26868;
   font-size: 30px;
+  margin-top: 15px;
 }
 .HyderabadColor {
   color: #fff;
@@ -259,13 +303,13 @@ button:focus {
   position: absolute;
   height: 35px;
   z-index: 1;
-  margin-left: 300px;
-  margin-top: -20px;
+  margin-left: 20%;
+  margin-top: -15px;
 }
 .soon {
   color: #fff;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 2px;
   font-size: 20px;
   margin: 0;
 }
@@ -321,6 +365,7 @@ button:focus {
 .pattren2 {
   /* padding: 100px; */
   background-color: #000000;
+  background-image: url(./Images/wave\ png.png);
 }
 .pattren3 {
   background-color: #f16868;
@@ -328,14 +373,12 @@ button:focus {
   padding-bottom: 200px;
 }
 .flexicin {
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
   margin-top: 100px;
-  padding-bottom: 100px;
-}
-.img-h {
-  height: 200px;
-  padding: 0px 15px;
+  text-align: center;
+  padding-bottom: 250px;
+  padding-top: 100px;
 }
 .stalkers {
   text-align: center;
@@ -372,9 +415,8 @@ button:focus {
   font-size: 25px;
 }
 .pattren4 {
-  /* height: auto;
-  width: auto; */
   background-color: #000000;
+  background-image: url(./Images/wave\ png.png);
 }
 .footerflex {
   display: flex;
@@ -393,7 +435,7 @@ button:focus {
 }
 .img-mrgn {
   margin-top: 30px;
-  /* margin-left: 50px; */
+  margin-left: 50px;
 }
 .logos {
   margin: 15px 0 0 15px;
@@ -442,6 +484,7 @@ button:focus {
 
 .team-img {
   background-image: url(./Images/banner.jpg);
+  height: 1000px;
   /* padding: 400px 500px; */
 }
 .application {
@@ -460,17 +503,19 @@ button:focus {
 .search {
   margin-left: 76px;
   width: 1280px;
+  border-radius: 15px;
   margin-bottom: 30px;
 }
 .node-js-justfy {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .node-js-clr {
   background-color: #fff;
   border-radius: 10px;
   width: 620px;
   padding: 30px;
+  margin-left: 20px;
 }
 .Node-js {
   color: #f16868;
@@ -503,7 +548,9 @@ button:focus {
 /* meet the honcers */
 
 .banner2 {
-  background-color: #f16868;
+  /* background-color: #f16868; */
+  background-image: url(./Images/banner.jpg);
+  height: 1000px;
 }
 .co-founder {
   background-color: #000;
@@ -762,6 +809,9 @@ button:focus {
 }
 /* be a honcer */
 @media only screen and (max-width: 420px) {
+  .img-h {
+    width: 300px;
+  }
   .node-js-justfy {
     display: block;
   }

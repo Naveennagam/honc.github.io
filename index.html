@@ -13,12 +13,15 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
   </head>
 
   <body class="f-h">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-100">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark px-100">
       <a class="navbar-brand" href="#">
         <img src="./Images/honc logo.png" alt="" />
       </a>
@@ -37,24 +40,24 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="mr-auto"></div>
         <ul class="navbar-nav my-2 my-lg-0">
-          <li class="nav-item">
+          <li class="nav-item h1">
             <a class="nav-link active" href="index.html">home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item h1">
             <a class="nav-link" href="./meetthehoncers.html"
               >meet the honcers</a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item h1">
             <a class="nav-link" href="beahoncer.html">be a honcer</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item h1">
             <a class="nav-link" href="contactus.html">contact us</a>
           </li>
         </ul>
       </div>
     </nav>
-    <section class="banner">
+    <section class="banner" id="s1">
       <div class="relaxMargin">
         <div class="changetext">
           <h1
@@ -93,7 +96,7 @@
         </span>
       </p>
     </section>
-    <section class="KeepingTheCars">
+    <section class="KeepingTheCars KeepingTheCars2" id="s2">
       <p class="Keeping">Keeping the cars clean and tidy at</p>
       <div class="flex2">
         <div class="hyderabadCenter">
@@ -133,7 +136,7 @@
         <div class="yellowBorder2"></div>
       </div>
     </section>
-    <section class="ptrn">
+    <section class="ptrn" id="s3">
       <div class="pattren">
         <div class="box">
           <div class="boxLine">
@@ -167,33 +170,47 @@
         </div>
       </div>
     </section>
-    <section class="pattren2">
+    <section class="pattren2" id="s4">
       <p class="Keeping">Proud partners of</p>
       <div class="flexicin">
-        <img class="img-h" src="./Images/pic.png" alt="" />
-        <img class="img-h" src="./Images/pic.png" alt="" />
-        <img class="img-h" src="./Images/pic.png" alt="" />
-        <img class="img-h" src="./Images/pic.png" alt="" />
+        <img
+          class="img-h"
+          src="./Images/client/clients_eletric-pe.png"
+          alt=""
+        />
+        <img
+          class="img-h"
+          src="./Images/client/clients_raam-group.png"
+          alt=""
+        />
+        <img class="img-h" src="./Images/client/clients_DLF.png" alt="" />
+        <img class="img-h" src="./Images/client/clients_GMR.png" alt="" />
+        <img class="img-h" src="./Images/client/clients_q-city.png" alt="" />
+        <!-- <img class="img-h" src="./Images/client/clients_Phoneix.png" alt="" />
+        <img class="img-h" src="./Images/client/clients_vamsiramm.png" alt="" />
+        <img class="img-h" src="./Images/client/clients_RMZZ.png" alt="" /> -->
       </div>
     </section>
-    <section class="pattren3">
-      <p class="stalkers">We are not stalkers, we are honcers!</p>
-      <p class="stalkers2">We are there everywhere for you</p>
+    <section id="s5">
+      <div class="pattren3">
+        <p class="stalkers">We are not stalkers, we are honcers!</p>
+        <p class="stalkers2">We are there everywhere for you</p>
 
-      <h1 class="stalkers3">
-        Be it
-        <span
-          class="stalkers3clr changetext"
-          style="opacity: 1"
-          class="big_scrolling_text_groceries"
-          >home</span
-        >,
-      </h1>
-      <p class="honc">
-        <span class="wherever">honc is, wherever the car is…</span>
-      </p>
+        <h1 class="stalkers3">
+          Be it
+          <span
+            class="stalkers3clr changetext"
+            style="opacity: 1"
+            class="big_scrolling_text_groceries"
+            >home</span
+          >,
+        </h1>
+        <p class="honc">
+          <span class="wherever">honc is, wherever the car is…</span>
+        </p>
+      </div>
     </section>
-    <footer class="pattren4">
+    <footer class="pattren4" id="s6">
       <div id="main">
         <img class="img-mrgn" src="./Images/quote-02.png" alt="," />
         <div class="footerflex">
@@ -215,7 +232,7 @@
               ever since the 1500.Lorem Ipsum is simply dummy text of printing
             </p>
           </div>
-          <div class="img-m">
+          <!-- <div class="img-m">
             <img class="img-w" src="./Images/pic.png" alt="" />
             <h1 style="font-family: honc-bold" class="name">Sanjay</h1>
             <p style="font-family: honc-regular" class="footerparagraph">
@@ -223,7 +240,7 @@
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500.Lorem Ipsum is simply dummy text of printing
             </p>
-          </div>
+          </div> -->
           <div class="img-m m-right">
             <img class="img-w" src="./Images/pic.png" alt="" />
             <h1 style="font-family: honc-bold" class="name">Santhosh</h1>
@@ -270,9 +287,9 @@
         </p>
       </div>
     </footer>
-    <!-- <script src="./main.js"></script> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
     <!-- boostrap link added -->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
