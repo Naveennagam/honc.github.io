@@ -32,9 +32,6 @@ body {
   src: url("./font/honc-SemiBold.ttf");
 }
 /*fonts*/
-/* h1,h2,h3,h4,h5,h6 {
-  font-family: honc-Bold;
-} */
 .h1,
 .h2,
 .h3,
@@ -71,7 +68,7 @@ h5 {
   font-size: 1.875rem; /*/30/*/
 }
 h6 {
-  font-size: 1.563; /*/25/*/
+  font-size: 25px /*/1.563/*/; /*/25/*/
 }
 p {
   font-size: 1.125rem; /*/18/*/
@@ -87,11 +84,9 @@ p {
 .bg-dark {
   background-color: #000000 !important;
 }
-.nav-item > a {
-  font-size: 20px;
-}
 .nav-link {
   padding: 0;
+  font-size: 1.25rem;
 }
 
 .nav-item {
@@ -110,9 +105,6 @@ button:focus {
 }
 .p0 {
   padding: 0;
-}
-.f30 {
-  font-size: 25px;
 }
 .areal {
   /* font-family: ; */
@@ -217,25 +209,29 @@ nav {
 }
 .KeepingTheCars {
   background-color: #000;
-  background-image: url(./Images/wave\ png.png);
   width: auto;
   background-size: auto auto;
+}
+.waves {
+  background-image: url(./Images/wave\ png.png);
 }
 .Keeping {
   text-align: center;
   margin: 0;
-  font-size: 45px;
+  /* font-size: 45px; */
   color: #f26868;
   padding-top: 120px;
 }
 .textColor {
   color: #f26868;
   font-size: 30px;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .HyderabadColor {
   color: #fff;
   font-size: 18px;
+  line-height: 30px;
 }
 .flex2 {
   display: flex;
@@ -320,7 +316,7 @@ nav {
   color: #fff;
   text-align: center;
   padding-top: 2px;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin: 0;
 }
 .ptrn {
@@ -347,7 +343,7 @@ nav {
   padding: 30px 0px;
 }
 .superstar {
-  font-size: 40px;
+  /* font-size: 40px; */
   text-align: center;
   margin-top: 100px;
 }
@@ -362,20 +358,19 @@ nav {
 }
 .Check {
   text-align: center;
-  line-height: 25px;
-  font-size: 30px;
+  line-height: 40px;
+  /* font-size: 30px; */
 }
 .Select {
   color: #ffffff;
   text-align: center;
-  line-height: 25px;
-  font-size: 20px;
-  margin-top: 20px;
+  line-height: 35px;
+  /* font-size: 20px; */
+  margin-top: 15px;
 }
 .pattren2 {
   /* padding: 100px; */
   background-color: #000000;
-  background-image: url(./Images/wave\ png.png);
 }
 .pattren3 {
   background-color: #f16868;
@@ -393,7 +388,7 @@ nav {
 .stalkers {
   text-align: center;
   margin: 0;
-  font-size: 40px;
+  /* font-size: 40px; */
   list-style: 35px;
   color: #000000;
 }
@@ -401,13 +396,13 @@ nav {
   text-align: center;
   margin-top: -8px;
   margin-bottom: 10px;
-  font-size: 40px;
+  /* font-size: 40px; */
   color: #000000;
 }
 .stalkers3 {
   text-align: center;
   margin: 0;
-  font-size: 60px;
+  font-size: 80px;
   color: #000000;
 }
 .stalkers3clr {
@@ -421,12 +416,11 @@ nav {
 .honc {
   color: #fff;
   text-align: center;
-  padding-top: 5px;
-  font-size: 25px;
+  padding-top: 25px;
+  /* font-size: 25px; */
 }
 .pattren4 {
   background-color: #000000;
-  background-image: url(./Images/wave\ png.png);
 }
 .footerflex {
   display: flex;
@@ -435,12 +429,13 @@ nav {
 .name {
   color: #fff;
   text-align: center;
-  font-size: 25px;
+  /* font-size: 25px; */
   margin-top: 20px;
 }
 .footerparagraph {
   color: #fff;
   font-size: 14px;
+  line-height: 20px;
   text-align: center;
 }
 .img-mrgn {
@@ -479,7 +474,7 @@ nav {
 }
 .honcing {
   color: #f16868;
-  font-size: 28px;
+  /* font-size: 28px; */
   text-align: center;
 }
 .copy {
@@ -512,9 +507,15 @@ nav {
 }
 .search {
   margin-left: 76px;
+  margin-top: -5px;
   width: 1280px;
   border-radius: 15px;
-  margin-bottom: 30px;
+  height: 45px;
+  position: absolute;
+}
+.search-icon {
+  position: absolute;
+  margin-left: 100px;
 }
 .node-js-justfy {
   display: flex;
@@ -529,10 +530,7 @@ nav {
 }
 .Node-js {
   color: #f16868;
-  font-size: 30px;
-}
-.f-20 {
-  font-size: 20px;
+  /* font-size: 30px; */
 }
 .m-t-15 {
   margin-top: 15px;
@@ -585,14 +583,14 @@ nav {
 /* contactus */
 
 .wash-border-bottom {
-  /* padding-bottom: 30px; */
-  border-bottom: 4px solid #000000;
+  padding-bottom: 20px;
+  border-bottom: 4px solid #ffffff;
 }
 .wash {
   text-align: center;
   margin: 0;
-  font-size: 35px;
-  color: rgb(0, 0, 0);
+  /* font-size: 35px; */
+  color: #fff;
 }
 .font-28 {
   text-align: center;
@@ -648,7 +646,7 @@ nav {
     text-align: center;
   }
   .CarWash {
-    padding: 30px 0 0 0;
+    padding: 30px 0 10px 0;
   }
   .border-btm {
     border-bottom: 3.5px solid #ffffff;
@@ -770,6 +768,9 @@ nav {
   }
   .dash {
     margin-top: -15px;
+  }
+  .stalkers3 {
+    font-size: 3.75rem;
   }
   .honc {
     font-size: 18px;
