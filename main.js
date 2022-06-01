@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        var s1 = $("#s1").height() +130;
+        var s1 = $("#s1").height() +70;
         var s2 = $("#s2").height();
         var s3 = $("#s3").height();
         var s4 = $("#s4").height();
@@ -37,3 +37,21 @@ $(document).ready(function(){
         } 
     })
   })
+  
+  
+//   var text = ["Relax with family at home.","Impress your clients at office", "Take a nap on flight"];
+//   var counter = 0;
+//   var elem = document.getElementById("changeText");
+//   setInterval(change, 3000);
+  
+//   function change() {
+//       elem.classList.add('hide');
+//       setTimeout(function () {
+//           elem.innerHTML = text[counter];
+//           elem.classList.remove('hide');
+//           counter++;
+//           if (counter >= text.length) {
+//               counter = 0;
+//           }
+//       }, 500);
+//   }

@@ -52,30 +52,54 @@ body {
 .Medium {
   font-family: honc-Medium;
 }
-nav-item h1 {
-  font-size: 4.063rem; /*/65/*/
+h1 {
+  font-size: 4.375rem; /*/70/*/
 }
 h2 {
-  font-size: 3.75rem; /*/60/*/
+  font-size: 3.437rem; /*/55/*/
 }
 h3 {
-  font-size: 3.438rem; /*/55/*/
+  font-size: 3.125rem; /*/50/*/
 }
 h4 {
-  font-size: 2.813rem; /*/45/*/
-}
-h5 {
   font-size: 1.875rem; /*/30/*/
 }
+h5 {
+  font-size: 1.563rem; /*/25/*/
+}
 h6 {
-  font-size: 25px /*/1.563/*/; /*/25/*/
+  font-size: 1.25rem; /*/20/*/
 }
 p {
-  font-size: 1.125rem; /*/18/*/
+  font-size: 0.938rem; /*/15/*/
   font-family: honc-Regular;
 }
 .f-h {
   font-family: honc;
+  height: 200px;
+}
+/* margin left right 100px */
+.p-l-r-100{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.line-h-62 {
+  line-height: 62px;
+}
+.line-h-68 {
+  line-height: 68px;
+}
+.line-h-38 {
+  line-height: 38px;
+}
+.line-h-100 {
+  line-height: 100px;
+}
+.line-h-20 {
+  line-height: 20px;
+}
+.line-h-25 {
+  line-height: 25px;
 }
 /* Bootstrap Override */
 .navbar-dark .navbar-nav .nav-link {
@@ -114,6 +138,7 @@ button:focus {
 .px-100 {
   padding-left: 100px;
   padding-right: 100px;
+  height: 5rem;
 }
 
 /* Defults */
@@ -126,20 +151,40 @@ nav {
   border-bottom: 3px solid #fff;
 }
 .banner {
-  background-image: url(./Images/banner.jpg);
+  background-image: url(./Images/background-img/banner.jpg);
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background-size: cover;
 }
 .relax {
   margin: 0;
+  line-height: 60px;
   text-align: center;
-  font-size: 65px;
   color: #ffec00;
 }
-.changetext {
-  animation: fade-inout 1s infinite alternate;
+#changeText {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
+.hide, .hide2{
+  opacity: 0 !important;
+}
+.ds-none {
+  display: none;
+}
+#changeText2 {
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+.hide, .hide2{
+  opacity: 0 !important;
+}
+
+
+/* .changetext {
+  animation: fade-inout 1s infinite alternate;
+  transition: text 1s;
+} */
 @keyframes fade-inout {
   0% {
     opacity: 1;
@@ -152,7 +197,7 @@ nav {
 .relax2 {
   text-align: center;
   margin: 0;
-  font-size: 55px;
+  line-height: 68px;
   color: #fff;
 }
 .border-btm {
@@ -168,19 +213,19 @@ nav {
   display: flex;
 }
 .itemCenter {
-  margin-top: 50px;
+  margin-top: 30px;
   justify-content: center;
 }
 .itemCenter div {
-  margin: 15px;
+  margin: 15px 8px;
 }
 .itemCenter div img {
-  width: 170px;
+  width: 220px;
 }
 .CarWash {
   text-align: center;
   color: #000;
-  padding: 90px 0 10px 0;
+  padding: 130px 0 10px 0;
   margin: 0;
 }
 .m30 {
@@ -204,7 +249,7 @@ nav {
   color: #00cd0e;
 }
 .love {
-  font-size: 12px;
+  font-size: 15px;
   color: #ff0000;
 }
 .KeepingTheCars {
@@ -213,25 +258,26 @@ nav {
   background-size: auto auto;
 }
 .waves {
-  background-image: url(./Images/wave\ png.png);
+  background-image: url(./Images/background-img/wave\ png.png);
 }
 .Keeping {
   text-align: center;
   margin: 0;
-  /* font-size: 45px; */
+  line-height: 62px;
   color: #f26868;
   padding-top: 120px;
 }
 .textColor {
   color: #f26868;
   font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  line-height: 38px;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 .HyderabadColor {
   color: #fff;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
 }
 .flex2 {
   display: flex;
@@ -251,7 +297,7 @@ nav {
 }
 .position {
   position: relative;
-  width: 300px;
+  width: 305px;
 }
 .yellowBorder {
   position: absolute;
@@ -309,18 +355,47 @@ nav {
   position: absolute;
   height: 35px;
   z-index: 1;
-  margin-left: 20%;
+  margin-left: 18%;
   margin-top: -15px;
 }
 .soon {
   color: #fff;
   text-align: center;
+  line-height: 24px;
   padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
   /* font-size: 20px; */
   margin: 0;
 }
-.ptrn {
-  background-color: #f16868;
+
+
+.horizontal-scroll-wrapper {
+  transform:rotate(-90deg) translateY(-100px);
+}
+.horizontal-scroll-wrapper > div {
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+.horizontal-scroll-wrapper {
+  transform: rotate(-90deg);
+  transform-origin: right top;
+}
+.horizontal-scroll-wrapper > div {
+  width: 100px;
+  height: 100px;
+}
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+
+.ptrn , .banner {
+background-image: url(./Images/background-img/banner.jpg);
 }
 .pattren {
   background-color: #f16868;
@@ -343,29 +418,27 @@ nav {
   padding: 30px 0px;
 }
 .superstar {
-  /* font-size: 40px; */
   text-align: center;
-  margin-top: 100px;
+  line-height: 62px;
+  margin-top: 80px;
 }
 .flex3 {
   display: flex;
   justify-content: space-around;
-  margin: 60px;
+  margin: 70px;
 }
 .m-l-r {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .Check {
   text-align: center;
   line-height: 40px;
-  /* font-size: 30px; */
+  line-height: 34px;
 }
 .Select {
   color: #ffffff;
   text-align: center;
-  line-height: 35px;
-  /* font-size: 20px; */
   margin-top: 15px;
 }
 .pattren2 {
@@ -373,9 +446,9 @@ nav {
   background-color: #000000;
 }
 .pattren3 {
-  background-color: #f16868;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-image: url(./Images/background-img/banner.jpg);
+  padding-top: 190px;
+  padding-bottom: 190px;
 }
 .flexicin {
   /* display: flex; */
@@ -385,6 +458,20 @@ nav {
   padding-bottom: 250px;
   padding-top: 100px;
 }
+.graterthan {
+  text-align: right;
+}
+/* .marquee {
+  white-space: nowrap;
+}
+.marquee div {
+  animation: animate 20s linear infinite;
+}
+@keyframes animate {
+  100% {
+    transform: translate(-100%, 0);
+  }
+} */
 .stalkers {
   text-align: center;
   margin: 0;
@@ -395,8 +482,8 @@ nav {
 .stalkers2 {
   text-align: center;
   margin-top: -8px;
+  margin-top: 25px;
   margin-bottom: 10px;
-  /* font-size: 40px; */
   color: #000000;
 }
 .stalkers3 {
@@ -417,7 +504,6 @@ nav {
   color: #fff;
   text-align: center;
   padding-top: 25px;
-  /* font-size: 25px; */
 }
 .pattren4 {
   background-color: #000000;
@@ -425,12 +511,12 @@ nav {
 .footerflex {
   display: flex;
   margin-top: 30px;
+  padding-bottom: 150px;
 }
 .name {
-  color: #fff;
+  color: #F16868;
   text-align: center;
-  /* font-size: 25px; */
-  margin-top: 20px;
+  padding-top: 40px;
 }
 .footerparagraph {
   color: #fff;
@@ -439,18 +525,22 @@ nav {
   text-align: center;
 }
 .img-mrgn {
-  margin-top: 30px;
-  margin-left: 50px;
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  width: 8%;
 }
 .logos {
-  margin: 15px 0 0 15px;
+  margin: 30px 0 30px 0;
+  text-align: center;
+
 }
 .footerflex > div {
-  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .img-m {
   text-align: center;
-  /* margin: 0px 35px; */
 }
 /* .m-left {
   margin-left: 100px;
@@ -459,42 +549,52 @@ nav {
   margin-right: 100px;
 } */
 .img-w {
-  width: 60%;
+  border: 3px solid #f16868;
+  border-radius: 50%;
 }
 .image-w {
-  width: 100%;
+  width: 50%;
+  border-radius: 50%;
+  border: 5px solid #f16868;
 }
 .footerflex2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+  justify-content: center;       /*/  justify-content: center;/*/
 }
 .imgmargin {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 .honcing {
   color: #f16868;
   /* font-size: 28px; */
   text-align: center;
 }
+.copy-flex{
+  display: flex;
+  justify-content: space-between;
+}
 .copy {
-  color: #fff;
+  color: #000;
   text-align: center;
   font-size: 14px;
   margin: 0px;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 /* be a honcer */
 
 .team-img {
-  background-image: url(./Images/banner.jpg);
+  background-image: url(./Images/background-img/banner.jpg);
   height: 1000px;
   /* padding: 400px 500px; */
 }
 .application {
   background-color: #707070;
-  padding: 50px;
+  padding: 50px 0;
+}
+.mx-100 {
+  margin: 0 100px;
+  padding: 50x 0;
 }
 .apply {
   background-color: #2c92b4;
@@ -505,17 +605,22 @@ nav {
   border-radius: 40px;
   text-align: center;
 }
+.search-parent {
+  position: relative;
+  margin: 10px 0;
+}
 .search {
-  margin-left: 76px;
-  margin-top: -5px;
-  width: 1280px;
+  width: 100%;
   border-radius: 15px;
-  height: 45px;
-  position: absolute;
+  font-size: 18px;
+  padding: 5px 10px 5px 40px;
+
+  /* position: absolute; */
 }
 .search-icon {
   position: absolute;
-  margin-left: 100px;
+  left: 10px;
+  top: 21%;
 }
 .node-js-justfy {
   display: flex;
@@ -526,7 +631,7 @@ nav {
   border-radius: 10px;
   width: 620px;
   padding: 30px;
-  margin-left: 20px;
+  margin: 0 10px;
 }
 .Node-js {
   color: #f16868;
@@ -548,16 +653,11 @@ nav {
 .flex-time {
   display: flex;
 }
-.img-m {
-  margin-top: 8px;
-  /* margin-right: 20px; */
-}
-
 /* meet the honcers */
 
 .banner2 {
   /* background-color: #f16868; */
-  background-image: url(./Images/banner.jpg);
+  background-image: url(./Images/background-img/banner.jpg);
   height: 1000px;
 }
 .co-founder {
@@ -614,9 +714,6 @@ nav {
   display: flex;
   margin-top: 30px;
   justify-content: center;
-}
-.cell-font {
-  font-size: 28px;
 }
 /* Media */
 
@@ -774,7 +871,7 @@ nav {
   }
   .honc {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 70px;
   }
   .logos {
     margin: 0;
@@ -782,14 +879,17 @@ nav {
   }
 
   .pattren3 {
-    padding-top: 200px;
+    padding-top: 150px;
     padding-left: 30px;
     padding-right: 30px;
   }
-  .stalkers,
-  .stalkers2 {
+  .stalkers {
     font-size: 35px;
     margin-bottom: 20px;
+  }
+  .stalkers2 {
+    font-size: 30px;
+    margin-top: 70px;
   }
   .honcing {
     font-size: 25px;
@@ -837,12 +937,12 @@ nav {
     padding: 20px;
     margin-top: 35px;
   }
+
+  .mx-100 {
+    margin: 0 10px;
+  }
   .application {
     padding: 10px;
-  }
-  .search {
-    margin-left: 30px;
-    width: 320px;
   }
   .node-js-justfy {
     margin: 20px 30px;
@@ -854,7 +954,7 @@ nav {
     font-size: 25px;
   }
   .banner {
-    background-image: url(./Images/mobile\ bg.png);
+    background-image: url(./Images/background-img/mobile\ bg.png);
   }
   .wash-border-bottom {
     padding-bottom: 0;
@@ -866,6 +966,9 @@ nav {
   }
   .font-28 {
     font-size: 30px;
+  }
+  .m15 {
+    text-align: center;
   }
   .meet {
     padding-top: 100px;
