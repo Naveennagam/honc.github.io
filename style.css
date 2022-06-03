@@ -40,6 +40,12 @@ body {
 .h6 {
   font-family: honc-Regular;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: honc-Regular;
+}
+.Regular {
+  font-family: honc-Regular;
+}
 .Bold {
   font-family: honc-Bold;
 }
@@ -74,6 +80,9 @@ p {
   font-size: 0.938rem; /*/15/*/
   font-family: honc-Regular;
 }
+.h1{
+  font: size 0.813rem;  /*/13/*/
+}
 .f-h {
   font-family: honc;
   height: 200px;
@@ -103,6 +112,9 @@ p {
 }
 .line-h-25 {
   line-height: 25px;
+}
+.line-h-27 {
+  line-height: 27px;
 }
 /* Bootstrap Override */
 .navbar-dark .navbar-nav .nav-link {
@@ -517,13 +529,18 @@ background-image: url(./Images/background-img/banner.jpg);
   padding-bottom: 150px;
 }
 .name {
-  color: #F16868;
+  color: #f16868;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
+}
+.names {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
 }
 .footerparagraph {
   color: #fff;
-  font-size: 14px;
+  margin-top: 15px;
   line-height: 20px;
   text-align: center;
 }
@@ -564,6 +581,9 @@ background-image: url(./Images/background-img/banner.jpg);
 .footerflex2 {
   justify-content: center;       /*/  justify-content: center;/*/
 }
+.footer-clr{
+  background-color: #f2f2f2;
+}
 .imgmargin {
   margin: 0 10px;
 }
@@ -601,15 +621,43 @@ background-image: url(./Images/background-img/banner.jpg);
   border-radius: 40px;
   text-align: center;
 }
-.Proud {
+.Vacancy {
     text-align: center;
     margin: 0;
     line-height: 62px;
     color: #f26868;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 .be-a-honcer-section2{
   background-color: #fff;
+}
+.be-a-honcer-section3{
+  background-color: #000;
+}
+.Roles-m{
+  margin: 25px 0;
+}
+.m-15{
+margin: 15px 0;
+}
+.button{
+  background-color: #F05A5A;
+  border-radius: 50px;
+color: #fff;
+  padding: 13px 40px ;
+}
+.t-cntr{
+  text-align: end;
+  margin-top: 80px;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+}
+.clr-fff{
+  color: #fff;
+}
+.m-t-80{
+  padding-top: 80px;
+
 }
 .search-parent {
   position: relative;
@@ -674,10 +722,11 @@ background-image: url(./Images/background-img/banner.jpg);
 .co-founder-flex {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 .linkdin-p {
-  padding-top: 10px;
+width: 50px;
+padding-top: 10px;
 }
 .meet {
   margin: 0;
@@ -687,40 +736,62 @@ background-image: url(./Images/background-img/banner.jpg);
   color: #ffec00;
 }
 /* contactus */
-
-.wash-border-bottom {
-  padding-bottom: 20px;
-  border-bottom: 4px solid #ffffff;
+.bg-black{
+  background-color: #000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: space-around;
 }
-.wash {
-  text-align: center;
-  margin: 0;
-  /* font-size: 35px; */
+.clr-white{
   color: #fff;
 }
-.font-28 {
+.details{
+  display: flex;
+
+}
+.dropdown-width{
+  width: 500px;
+}
+.flex-width{
+  display: flex;
+text-align: center;
+justify-content: space-between;
+}
+.m-r-15{
+  margin-right: 15px;
+}
+.flex-padding{
+  display: flex;
+  padding: 20px 0;
+  text-decoration: underline;
+}
+.border-r{
+  border-radius:10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 0.875rem;
+  padding: 10px;
+  color: #6E6E6E;
+}
+.submit-btn{
+  background-color:#F05A5A ;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: #fff;
+  width: 160px;
   text-align: center;
-  margin: 0;
-  font-size: 28px;
-  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.phone-border-bottom {
-  padding-bottom: 10px;
-  border-bottom: 4px solid #000000;
+.dropdown-2{
+  width: 243px;
 }
-.m15 {
-  margin: 15px 40px;
+.details {
+justify-content: space-evenly;
 }
-.phone-flex {
-  display: flex;
-  margin-top: 30px;
-  justify-content: center;
-}
-.phone-flex-2 {
-  display: flex;
-  margin-top: 30px;
-  justify-content: center;
-}
+
+
 /* Media */
 
 @media only screen and (max-width: 1080px) {
@@ -966,7 +1037,9 @@ background-image: url(./Images/background-img/banner.jpg);
     padding: 20px;
     margin-top: 35px;
   }
-
+  .flex-width{
+    display: block;
+  }
   .mx-100 {
     margin: 0 10px;
   }
@@ -1009,5 +1082,8 @@ background-image: url(./Images/background-img/banner.jpg);
   }
   .banner {
     padding-bottom: 100px;
+  }
+  .details{
+    display: block;
   }
 }
