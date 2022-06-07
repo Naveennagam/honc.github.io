@@ -1150,7 +1150,7 @@ background-repeat: repeat;
   }
 
   .border-btm {
-    border-bottom: 3.5px solid #ffffff;
+    border-bottom: 3.5px solid #000;
   }
 
   .relax {
@@ -1238,6 +1238,8 @@ background-repeat: repeat;
 
   .flexicin {
     margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .flex3 {
@@ -1369,14 +1371,10 @@ background-repeat: repeat;
     width: 70px;
   }
 
-  .footerflex>div {
-    padding: 20px 50px;
-  }
-
   .co-founder-flex {
     flex-wrap: wrap;
     /* display: block; */
-    padding: 50px;
+    /* padding: 50px; */
   }
 
   .meet {
@@ -1386,6 +1384,8 @@ background-repeat: repeat;
 
   .image-w {
     padding-top: 30px;
+    width: 70%;
+    margin-top: 30px;
   }
 }
 
@@ -1502,9 +1502,10 @@ background-repeat: repeat;
     .hr1 {
     margin-right: 80px;
     }
-    .p-l-r-100 {
-      padding: 0;
-    }
+ .p-l-r-20{
+   padding-left: 0px;
+   padding-right: 0px;
+ }
 
     .padding-t {
       padding-top: 40px;
