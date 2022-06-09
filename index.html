@@ -45,39 +45,27 @@
     </div>
   </nav>
   <section class="home-section" id="s1">
-<div class="ready">
-  <div class="relaxMargin">
-    <div class="changetext ready">
-      <h2 class="relax Bold" style="opacity: 1" class="big_scrolling_text_groceries hide" id="changeText">
-        <!-- Relax with family at home. -->
-      </h2>
-    </div>
+    <div class="ready">
+      <div class="relaxMargin">
+        <div class="changetext ready">
+          <h2 class="relax Bold" style="opacity: 1" class="big_scrolling_text_groceries hide" id="changeText">
+            <!-- Relax with family at home. -->
+          </h2>
+        </div>
 
-    <h3 class="relax2 SemiBold">
-      <span class="border-btm"> as we wash your car </span>
-    </h3>
-    <div class="flex itemCenter">
-      <div>
-        <a href="https://apps.apple.com/in/app/honc/id1520441184">
-          <img src="./Images/app-store_google-play-03.png" alt="" />
-        </a>
+        <h3 class="relax2 SemiBold">
+          <span class="border-btm"> as we wash your car </span>
+        </h3>
+        <h6 class="CarWash f30 SemiBold">honc’s Car Wash at Doorstep</h6>
       </div>
-      <div>
-        <a href="https://play.google.com/store/apps/details?id=com.honc_customer&hl=en_IN">
-          <img src="./Images/app-store_google-play-02.png" alt="" />
-        </a>
-      </div>
+      <h6 class="madeWithLOve">
+        <span class="color1">
+          <span class="orange"> Made With </span>
+          <span class="white"> L<span class="love">&#10084;</span>ve</span>
+          <span class="green">For Bharat</span>
+        </span>
+      </h6>
     </div>
-    <h6 class="CarWash f30 SemiBold">honc’s Car Wash at Doorstep</h6>
-  </div>
-  <h6 class="madeWithLOve">
-    <span class="color1">
-      <span class="orange"> Made With </span>
-      <span class="white"> L<span class="love">&#10084;</span>ve</span>
-      <span class="green">For Bharat</span>
-    </span>
-  </h6>
-</div>
   </section>
   <section class="KeepingTheCars section  bg1 waves" id="s2">
     <h3 class="Keeping Bold ">Keeping the cars clean and tidy at</h3>
@@ -249,6 +237,18 @@
       <h4 class="honc">
         <span class="wherever line-h-38 Bold">honc is, wherever the car is…</span>
       </h4>
+      <div class="flex itemCenter">
+        <div>
+          <a href="https://apps.apple.com/in/app/honc/id1520441184">
+            <img src="./Images/app-store_google-play-03.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="https://play.google.com/store/apps/details?id=com.honc_customer&hl=en_IN">
+            <img src="./Images/app-store_google-play-02.png" alt="" />
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -353,53 +353,53 @@
 
 
 
-      <script>
-        
-  gsap.registerPlugin(ScrollTrigger);
-  // REVEAL //
-  gsap.utils.toArray(".revealUp").forEach(function (elem) {
-    ScrollTrigger.create({
-      trigger: elem,
-      start: "top 80%",
-      end: "bottom 20%",
-      markers: true,
-      onEnter: function () {
-        gsap.fromTo(
-          elem,
-          { y: 100, autoAlpha: 0 },
-          {
-            duration: 1.25,
-            y: 0,
-            autoAlpha: 1,
-            ease: "back",
-            overwrite: "auto"
-          }
-        );
-      },
-      onLeave: function () {
-        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
-      },
-      onEnterBack: function () {
-        gsap.fromTo(
-          elem,
-          { y: -100, autoAlpha: 0 },
-          {
-            duration: 1.25,
-            y: 0,
-            autoAlpha: 1,
-            ease: "back",
-            overwrite: "auto"
-          }
-        );
-      },
-      onLeaveBack: function () {
-        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
-      }
-    });
-  });
-      </script>
+    <script>
 
-      
+      gsap.registerPlugin(ScrollTrigger);
+      // REVEAL //
+      gsap.utils.toArray(".revealUp").forEach(function (elem) {
+        ScrollTrigger.create({
+          trigger: elem,
+          start: "top 80%",
+          end: "bottom 20%",
+          markers: true,
+          onEnter: function () {
+            gsap.fromTo(
+              elem,
+              { y: 100, autoAlpha: 0 },
+              {
+                duration: 1.25,
+                y: 0,
+                autoAlpha: 1,
+                ease: "back",
+                overwrite: "auto"
+              }
+            );
+          },
+          onLeave: function () {
+            gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+          },
+          onEnterBack: function () {
+            gsap.fromTo(
+              elem,
+              { y: -100, autoAlpha: 0 },
+              {
+                duration: 1.25,
+                y: 0,
+                autoAlpha: 1,
+                ease: "back",
+                overwrite: "auto"
+              }
+            );
+          },
+          onLeaveBack: function () {
+            gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+          }
+        });
+      });
+    </script>
+
+
 
 
     <div id="main">
@@ -477,7 +477,7 @@
     var elem = document.getElementById("changeText");
     elem.innerHTML = text[counter];
     counter = 1;
-    setInterval(change, 3000);
+    setInterval(change, 2500);
 
     function change() {
       a = 3000;
@@ -493,42 +493,42 @@
       }, 500);
     }
   </script>
-  <!-- <script>
-                  var text = ["home", "office","airports","and even more",];
-      var counter2 = 0;
-var elem = document.getElementById("changeText2");
-elem.innerHTML = text[counter2];
+  <script>
+    var text = ["home", "office", "airports", "and even more",];
+    var counter2 = 0;
+    var elem = document.getElementById("changeText2");
+    elem.innerHTML = text[counter2];
     counter2 = 1;
-function change2() {
-  a = 3000;
-    elem.classList.add('hide2');
-    setTimeout(function () {
+    function change2() {
+      a = 3000;
+      elem.classList.add('hide2');
+      setTimeout(function () {
         elem.innerHTML = text[counter2];
         elem.classList.remove('hide2');
         counter2++;
         if (counter2 >= text.length) {
-            counter2 = 0;
+          counter2 = 0;
         }
-    }, 500);
-}
+      }, 500);
+    }
 
-    </script> -->
-<script>
-  $(document).ready  (function() {
-  var urls = ['./Images/background-img/changing- img.jpg','./Images/background-img/changing-img2.jpg','./Images/background-img/changing-img3.jpg'];
+  </script>
+  <script>
+    $(document).ready(function () {
+      var urls = ['./Images/background-img/Home 1.jpg', './Images/background-img/Home 2.jpg', './Images/background-img/Home 3.jpg'];
 
-  var cout = 1;
-  $('body').css('background-image', 'url("' + urls[0] + '")');
-  setInterval(function() {
-    $('body').css('background-image', 'url("' + urls[cout] + '")');
-    cout == urls.length-1 ? cout = 0 : cout++;
-  }, 3000);
+      var cout = 1;
+      $('body').css('background-image', 'url("' + urls[0] + '")');
+      setInterval(function () {
+        $('body').css('background-image', 'url("' + urls[cout] + '")');
+        cout == urls.length - 1 ? cout = 0 : cout++;
+      }, 3000);
 
-});
+    });
 
-</script>
+  </script>
 
-    
+
   <!-- boostrap link added -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
