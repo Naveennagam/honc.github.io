@@ -13,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./style.css" />
   <script src="./main.js"></script>
+
 </head>
 
 <body class="f-h">
@@ -139,23 +140,14 @@
       </div>
     </div>
   </section>
-  <section class="pattren2 waves p-l-r-100" id="s4">
+  <section class="pattren2 waves" id="s4">
     <h3 class="Keeping Bold">Proud partners of</h3>
-    <div>
-      <!-- <img src="./Images/SVG/lessthen.svg" alt="" /> -->
-
-
-
-
-
-
-
-
+    <div class="p-b-100">
       <div class="flexicin marquee">
         <div>
 
           <div class="slideshow-container ">
-            <div class="arrow ">
+            <div class="arrow">
               <a class="prev" onclick="plusSlides(-1)">❮</a>
               <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
@@ -511,6 +503,20 @@
         }
       }, 500);
     }
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      var urls = ['./Images/background-img/Home 1.jpg', './Images/background-img/Home 2.jpg', './Images/background-img/Home 3.jpg'];
+
+      var cout = 1;
+      $('body').css('background-image', 'url("' + urls[0] + '")');
+      setInterval(function () {
+        $('body').css('background-image', 'url("' + urls[cout] + '")');
+        cout == urls.length - 1 ? cout = 0 : cout++;
+      }, 3000);
+
+    });
 
   </script>
   <script>

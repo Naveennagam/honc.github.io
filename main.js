@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        var s1 = $("#s1").height() +70;
+        var s1 = $("#s1").height() +40;
         var s2 = $("#s2").height();
         var s3 = $("#s3").height();
         var s4 = $("#s4").height();
@@ -29,7 +29,7 @@ $(document).ready(function(){
   $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        var se1 = $("#se1").height() - 70;
+        var se1 = $("#se1").height() -70;
         var se2 = $("#se2").height() ;
        
         if (scroll >  (se1)) {

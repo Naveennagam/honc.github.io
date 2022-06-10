@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -247,22 +248,22 @@ nav {
   text-align: center;
   color: #ef3f49;
 }
-.home-section{
-  padding: 70px 0;
+.home-section {
+  padding: 60px 0;
 }
 #changeText {
   opacity: 1;
   transition: opacity 0.5s;
 }
-.ready{
+.ready {
   transition: opacity 0.5s;
-padding-top: 150px;
-/* position: static; */
-/* justify-content: center; */
-/* padding-bottom: 20px;   */
-/* background-size: auto; */
+  padding-top: 150px;
+  /* position: static; */
+  /* justify-content: center; */
+  /* padding-bottom: 20px;   */
+  /* background-size: auto; */
 
-object-fit: cover;
+  object-fit: cover;
 }
 
 .hide,
@@ -283,7 +284,6 @@ object-fit: cover;
 .hide2 {
   opacity: 0 !important;
 }
-
 
 /* .changetext {
   animation: fade-inout 1s infinite alternate;
@@ -342,7 +342,9 @@ object-fit: cover;
   padding: 130px 0 10px 0;
   margin: 0;
 }
-
+.flex-d-row{
+  flex-direction: row;
+}
 .m30 {
   margin-left: 40px;
 }
@@ -456,15 +458,17 @@ object-fit: cover;
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(90deg,
-      #fff 0%,
-      #fff 25%,
-      #00000000 25%,
-      #00000000 50%,
-      #fff 50%,
-      #fff 75%,
-      #00000000 75%,
-      #00000000 100%);
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #fff 25%,
+    #00000000 25%,
+    #00000000 50%,
+    #fff 50%,
+    #fff 75%,
+    #00000000 75%,
+    #00000000 100%
+  );
   background-size: 120px;
   animation: animate 1.5s linear infinite;
 }
@@ -508,11 +512,19 @@ object-fit: cover;
 }
 
 
+.carousel-inner::after{
+  display: flex;
+}
+.p-b-100{
+  padding-bottom: 100px;
+}
+
+
 .horizontal-scroll-wrapper {
   transform: rotate(-90deg) translateY(-100px);
 }
 
-.horizontal-scroll-wrapper>div {
+.horizontal-scroll-wrapper > div {
   transform: rotate(90deg);
   transform-origin: right top;
 }
@@ -522,7 +534,7 @@ object-fit: cover;
   transform-origin: right top;
 }
 
-.horizontal-scroll-wrapper>div {
+.horizontal-scroll-wrapper > div {
   width: 100px;
   height: 100px;
 }
@@ -533,12 +545,6 @@ object-fit: cover;
   overflow-y: auto;
   overflow-x: hidden;
 }
-
-
-
-
-
-
 
 .mySlides {
   animation: opac 0.8s;
@@ -551,12 +557,13 @@ object-fit: cover;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   padding: 15px;
   color: white;
   transition: 0.6s ease;
-  border-radius: 20px ;
+  border-radius: 20px;
 }
 
 /* Position the "next button" to the right */
@@ -569,11 +576,12 @@ object-fit: cover;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color:rgb(143, 143, 143);
+.prev:hover,
+.next:hover {
+  background-color: rgb(143, 143, 143);
 }
 
-.arrow{
+.arrow {
   justify-content: space-around;
 }
 
@@ -583,18 +591,17 @@ object-fit: cover;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color:rgb(143, 143, 143);
+  background-color: rgb(143, 143, 143);
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.5s ;
+  transition: background-color 0.5s;
 }
 
-
-.dots{
+.dots {
   text-align: center;
   margin-top: 150px;
 }
- .dot:hover {
+.dot:hover {
   background-color: #f16868;
 }
 
@@ -605,20 +612,16 @@ object-fit: cover;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-a:not([href]):not([tabindex]){
+a:not([href]):not([tabindex]) {
   color: #fff;
 }
-
-
-
-
-
-
-
-
 
 .ptrn,
 .banner {
@@ -630,6 +633,7 @@ a:not([href]):not([tabindex]){
   margin-left: 100px;
   margin-right: 100px;
   padding: 130px 0px;
+  font-size: large;
 }
 
 .box {
@@ -682,11 +686,10 @@ a:not([href]):not([tabindex]){
   background-color: #000000;
 }
 
-
 .pattren3 {
   background-image: url(./Images/background-img/PPT\ slide-02.jpg);
-  	background-size: cover;
-background-repeat: repeat;
+  background-size: cover;
+  background-repeat: repeat;
   padding-top: 130px;
   background-attachment: fixed;
   padding-bottom: 130px;
@@ -794,10 +797,9 @@ background-repeat: repeat;
 .logos {
   margin: 30px 0 30px 0;
   text-align: center;
-
 }
 
-.footerflex>div {
+.footerflex > div {
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -815,11 +817,10 @@ background-repeat: repeat;
 .img-w {
   border: 3px solid #f16868;
   border-radius: 50%;
-
 }
 
 .image-w {
-  width:60px;
+  width: 60px;
   /* max-width: 60%; */
   /* min-height:100px; */
   min-width: 60%;
@@ -874,7 +875,7 @@ background-repeat: repeat;
 
 .apply {
   margin: 0px;
-  padding: 240px 100px;
+  padding: 303.7px 100px;
   border-radius: 40px;
   text-align: center;
 }
@@ -904,11 +905,10 @@ background-repeat: repeat;
 }
 
 .button {
-  background-color: #F05A5A;
+  background-color: #f05a5a;
   border-radius: 50px;
   color: #fff;
   padding: 13px 40px;
-  
 }
 
 .t-cntr {
@@ -924,7 +924,6 @@ background-repeat: repeat;
 
 .m-t-80 {
   padding-top: 80px;
-
 }
 
 .search-parent {
@@ -984,6 +983,12 @@ background-repeat: repeat;
 
 /* meet the honcers */
 
+.meet-the-honcers-img{
+  background-image: url(./Images/background-img/Marvel-LEGO-body-image-1.png);
+  background-image: url(./Images/background-img/6448.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .banner2 {
   /* background-color: #f16868; */
   background-image: url(./Images/background-img/banner.jpg);
@@ -995,18 +1000,18 @@ background-repeat: repeat;
   padding-bottom: 100px;
   height: auto;
 }
-.grid{
+.grid {
   grid-auto-rows: 50px;
   grid-template-areas: "a a a";
   display: grid;
   gap: 100px;
   grid-auto-rows: 300px;
   grid-template-rows: auto;
-  grid-auto-rows:auto ;
+  grid-auto-rows: auto;
   /* display: flex; */
   /* width: 100px; */
 }
-.width{
+.width {
   max-width: 300px;
 }
 .co-founder-flex {
@@ -1046,7 +1051,6 @@ background-repeat: repeat;
 
 .details {
   display: flex;
-
 }
 
 .dropdown-width {
@@ -1079,11 +1083,11 @@ background-repeat: repeat;
   margin-right: 10px;
   font-size: 0.875rem;
   padding: 10px;
-  color: #6E6E6E;
+  color: #6e6e6e;
 }
 
 .submit-btn {
-  background-color: #F05A5A;
+  background-color: #f05a5a;
   padding: 10px 10px;
   border-radius: 10px;
   color: #fff;
@@ -1127,12 +1131,13 @@ background-repeat: repeat;
   margin-top: -20px;
 }
 
-
 /* Media */
 
-@media only screen and (max-width: 1080px) {}
+@media only screen and (max-width: 1080px) {
+}
 
-@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 960px) {
+}
 
 /* home */
 @media only screen and (max-width: 420px) {
@@ -1385,12 +1390,20 @@ background-repeat: repeat;
   }
 }
 
-/* meeet the honcers */
+/* meet the honcers */
 @media only screen and (max-width: 420px) {
   .img-mrgn {
     width: 70px;
   }
-
+  .meet-the-honcers-img{
+    /* background-image: url(./Images/background-img/6448.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .grid {
+    display: block;
+  }
   .co-founder-flex {
     flex-wrap: wrap;
     /* display: block; */
@@ -1401,11 +1414,15 @@ background-repeat: repeat;
     font-size: 35px;
     padding-top: 30px;
   }
-
+  .img-m {
+    margin-top: 20px;
+  }
   .image-w {
-    padding-top: 30px;
     width: 70%;
     margin-top: 30px;
+  }
+  .names {
+    padding-top: 10px;
   }
 }
 
@@ -1423,7 +1440,9 @@ background-repeat: repeat;
     font-size: 25px;
     margin-top: 5px;
   }
-
+  .button {
+    padding: 5px 10px;
+  }
   .node-js-clr {
     background-color: #fff;
     border-radius: 10px;
@@ -1507,7 +1526,7 @@ background-repeat: repeat;
     }
 
     .apply {
-      padding: 100px 0;
+      padding: 220px 0;
     }
 
     .bg-black {
@@ -1517,19 +1536,17 @@ background-repeat: repeat;
 
     .dropdown-2 {
       width: 162px;
-
     }
     .hr1 {
-    margin-right: 80px;
+      margin-right: 80px;
     }
- .p-l-r-20{
-   padding-left: 0px;
-   padding-right: 0px;
- }
+    .p-l-r-20 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
 
     .padding-t {
       padding-top: 40px;
     }
   }
-
 }
